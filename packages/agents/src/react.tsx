@@ -101,7 +101,7 @@ export function useAgent<State = unknown>(
         agent.send(JSON.stringify(request));
       });
     },
-    []
+    [agent]
   );
 
   const agent = usePartySocket({
